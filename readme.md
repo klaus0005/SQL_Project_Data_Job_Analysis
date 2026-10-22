@@ -136,11 +136,11 @@ limit 25
 | DataRobot | 155,486        |
 | Golang    | 155,000        |
 
-# 5. Top 5 Most In-Demand Skills for Remote Data Analyst Jobs
+# 5. Top 5 most In-Demand skills for remote Data Analyst jobs
 I analyzed the top 25 most in-demand skills for remote Data Analyst jobs, comparing their demand counts and average annual salaries.
 ```sql
 WITH skills_demand as (
-    select 
+    select
         skills_dim.skill_id,
         skills_dim.skills,
         count(skills_job_dim.job_id) as demand_count
