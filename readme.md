@@ -17,8 +17,6 @@ Check it out: [SQL_Project folder](/SQL_Project)
 
 ### 1. Top paying jobs:
 I filtered 'Data Analyst' positions by avg yearly salary and location (remote). The query shows the top paying jobs.
-![alt text](assets/1_Top_paying_jobs_representation.png)
-Disclaimer: Bar graph representation built by ChatGPT.
 
 ```sql
 Select
@@ -40,6 +38,8 @@ order BY
     salary_year_avg desc
 LIMIT 10
 ```
+![alt text](assets/1_Top_paying_jobs_representation.png)
+Disclaimer: Bar graph representation built by ChatGPT.
 
 ### 2.Skills required:
 To find out what are the skills required for top-paying-jobs, I joined the job postings with the skills data (using cte):
@@ -72,8 +72,18 @@ inner JOIN skills_job_dim on top_paying_jobs.job_id = skills_job_dim.job_id
 inner join skills_dim on skills_job_dim.skill_id = skills_dim.skill_id
 order BY
     salary_year_avg desc
-limit 10
+limit 5
 ```
+### Top 5 Highest-Paying Remote Data Analyst Jobs
+
+| Job Title | Company | Average Annual Salary |
+|---|---|---:|
+| Data Analyst | Mantys | $650,000 |
+| Director of Analytics | Meta | $336,500 |
+| Associate Director – Data Insights | AT&T | $255,830 |
+| Data Analyst, Marketing | Pinterest Job Advertisements | $232,423 |
+| Data Analyst (Hybrid/Remote) | UCLA Health Careers | $217,000 |
+
 
 # 3. Top demanded skills:
 I focused on the skills for a Data Analyst job.
