@@ -11,4 +11,4 @@ group by
     skills
 order by 
     avg_salary desc
-limit 25
+limit 5
