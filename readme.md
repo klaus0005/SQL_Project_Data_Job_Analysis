@@ -1,5 +1,5 @@
 # Introduction
-This job market dataset let us understand how the job market of 'Data Analyst' in particular is shaped. I made a few queries to find out whare are the most paying jobs, in demand skills and different salaries.
+This job market dataset provides insights into the Data Analyst job market. I used SQL queries to identify the highest-paying job opportunities, the most in-demand skills, and the average salaries associated with different skills.
 Check it out: [SQL_Project folder](/SQL_Project)
 
 # Questions I wanted to answer through my queries:
@@ -39,7 +39,7 @@ order BY
 LIMIT 10
 ```
 ![alt text](assets/1_Top_paying_jobs_representation.png)
-Disclaimer: Bar graph representation built by ChatGPT.
+Disclaimer: Bar graph representation built with ChatGPT.
 
 ### 2.Skills required:
 To find out what are the skills required for top-paying-jobs, I joined the job postings with the skills data (using cte):
